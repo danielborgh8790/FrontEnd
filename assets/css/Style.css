@@ -1,0 +1,22 @@
+/*Seccion perteneciente al NavBar*/
+.bg-Black{
+    background-color: #000;
+}
+/*--------------------------------*/
+.list-group-item{
+    background-color: transparent;
+}
+/*--------------------------------*/
+.fa-linkedin:hover {
+    color: #2a34bb!important;
+}
+.fa-square-instagram:hover {
+    color: #bb2a9c!important;
+}
+.fa-telegram:hover {
+    color: #2a75bb!important;
+}
+.fa-github:hover {
+    color: #5a0741!important;
+}
+/*Seccion perteneciente a ...*/

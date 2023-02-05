@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Docuscscsment</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   
+    <!--Segun el video pasado por el profe, debo obviar esta linea ya que estaria agregando Bootstrap
+    a traves de un CDN, y por consiguiente de esta manera tendria acceso al mismo solo cuando 
+    tenga internet.
+    -->
+    <link rel="stylesheet" type="text/css" href="assets/css/Style.css">
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/31d9573041.js" crossorigin="anonymous"></script>
+    <title>Mi_Porfolio</title>
 </head>
 <body>
-    
+    <!--Seccion dedicada a la NavBar-->
+    <nav class="navbar navbar-expand-lg bg-Black">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/img/logo ArgProg (1).png" alt="Logo Argentina Progama" class="w-50 img-fluid">
+            </a>
+                <ul class="list-group list-group-horizontal">
+                    <li class="list-group-item"><a href="https://www.linkedin.com/in/daniel-borghelli-696825264/" target="_blank"><i class="fa-brands fa-linkedin text-white"></a></i></li>
+                    <li class="list-group-item"><i class="fa-brands fa-square-instagram text-white"></i></li>
+                    <li class="list-group-item"><i class="fa-brands fa-telegram text-white"></i></li>
+                    <li class="list-group-item"><i class="fa-brands fa-github text-white"></i></li>
+                    <li class="list-group-item">
+                         <!-- Button trigger modal (boton q abre el login)-->
+                        <i data-bs-toggle="modal" data-bs-target="#loginModal" class="fa-solid fa-user-lock"></i>
+                    </li>
+                </ul>
+        </div>
+    </nav>
+    <!--Seccion dedicada al banner-->
+    <section class="banner">
+        <img src="assets/img/Developer.jpg" alt="Rombos multicolor" class="img-fluid">
+
+    </section>
+  <!-- Modal (El Login) -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!--Este es mi formulario login-->
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <!--<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Open</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    -->
 </body>
 </html>
